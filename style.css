@@ -1,0 +1,102 @@
+body{
+	background-image: url("img/01.png");
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	align-content: space-around;
+	font-family: 'K2D', sans-serif;
+}
+input{
+	margin: 12px;
+	height: 25px;
+	border-radius: 3px;
+	align-self: center;
+	float: right;
+	flex-grow: 3;
+}
+select{
+	margin: 12px;
+	height: 25px;
+	border-radius: 3px;
+	align-self: center;
+	float: right;
+	flex-grow: 3;
+}
+textarea{
+	margin: 12px;
+	height: 40px;
+	border-radius: 3px;
+	align-self: center;
+	float: right;
+	flex-grow: 3;
+}
+label{
+	align-self: center;
+	float: left;
+}
+#submit{
+	align-self: center;
+	width: 130px;
+	height: 40px;
+	margin-top: 0px;
+	font-size: 20px;
+	font-weight: bolder; 
+	color: white;
+	background-color: #24c987;
+	border-color: #1faf76;
+}
+#submit:hover{
+	background-color: #1faf76;
+}
+input:valid{
+	border: 1px solid grey;
+}
+input:invalid{
+	border: 1px solid grey;
+}
+.valid{
+	border: 2px solid #24c987!important;
+}
+.invalid{
+	border: 2px solid #f4425f!important;
+}
+.message{
+	height: 25px;
+	align-self: center;
+	flex-shrink: 1;
+	padding: 2px 7px;
+	border-radius: 3px;
+	color: white;
+}
+.invalid-message{
+	background-color: #f4425f;
+}
+
+.valid-message{
+	background-color: #24c987;
+}
+#ui-datepicker-div{
+	background-color: grey;
+}
+#counter{
+	display: none;
+}
+.inp-div{
+	display: flex;
+	flex-direction: row;
+}
+.div-radio input{
+	float: none;
+
+}
+.div-radio label{
+	float: none;
+}
+.div-radio{
+	display: flex;
+	flex-direction: row;
+}
+

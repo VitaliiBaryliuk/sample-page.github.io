@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MateAcademy test</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
+</head>
+<body>
+	<div id="container" class="container">
+		<div class="header" >
+			<h1>MateAcademy test</h1>
+		</div>
+		<div class="form">
+			<form class="my-form" name="some-form" action=""  method="post"  novalidate> <!-- onsubmit="return validateForm() -->
+					<div class="inp-div">
+						<label for="first-name">First name:</label>
+						<input id="first-name" type="text" name="first-name" placeholder="Your first name" required data-validation = "text" >
+					</div>
+
+					<div class="inp-div">
+						<label for="last-name">Last name:</label>
+						<input id="last-name" type="text" name="last-name" placeholder="Your last name" required data-validation = "text" >
+					</div>
+
+					<div class="inp-div">
+						<label for="datepicker">Birth day:</label>
+						<input type="text" id="datepicker" data-validation = "date">
+					</div>
+					
+					<div class="div-radio">
+						<label for="gender">Gender:</label>
+						<input type="radio" id="gender" name="gender" value="male" data-validation = "gender" checked style="height: 20px; margin: 0px; width: 30px; flex-grow: 0;">
+						<label for="gender">male</label>
+						<input type="radio" id="gender" name="gender" value="female" data-validation = "gender" style="height: 20px; margin: 0px; width: 30px; flex-grow: 0;">
+						<label for="gender">female</label>
+					</div>
+
+					<div class="div-radio">
+						<label for="country">Country:</label>	
+						<select name="country" form ="#my-form" size="1">
+					    <option selected value="USA">USA</option>
+					    <option value="Cyprus">Cyprus</option>
+					    <option value="Ukraine">Ukraine</option>
+					    <option value="Holland">Holland</option>
+					    <option value="UK">UK</option>
+					    </select>
+				    </div>
+
+				    <div class="inp-div">
+					    <label for="email">Email:</label>
+						<input id="email" type="text" name="first-name" placeholder="Your email" required data-validation = "email" >
+						</div>
+						<div class="inp-div">
+						<label for="password">Password:</label>
+						<input id="password" type="password" name="password" placeholder="Your password" required data-validation = "password" >
+					</div>
+
+					<div class="inp-div">
+						<label for="address">Address:</label>
+						<input id="address" type="text" name="text" placeholder="Your address" required data-validation = "text" >
+						</div>
+						<div class="inp-div">
+					 	<label for="notes">Notes:</label>
+						<textarea id="notes" type="textarea" name="notes" placeholder="Your notes" required data-validation = "" ></textarea>
+					</div>
+				 <input id="submit" type="submit" name="submit" value="submit">
+			</form>
+			<span id="counter"></span>
+		</div>
+	</div>
+</body>
+</html>
